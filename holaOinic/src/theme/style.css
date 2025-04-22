@@ -1,0 +1,27 @@
+.calendario{
+    margin-bottom: 30px;
+    height: auto;
+    width: 300px;
+    display: grid;
+    margin: 0 auto;
+}
+
+.registro{
+    width: 300px;
+    height: auto;
+    text-align: center;
+    padding: auto;
+    display: grid;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.boton{
+    padding: 10px;
+}
+
+.foto{
+    width: 100%;
+    height: auto;
+}

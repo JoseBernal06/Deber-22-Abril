@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="../../theme/style.css">
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+			Mate Bernal
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="componentes">
+
+	<div>
+		<ion-button id="open-toast" expand="block">Saludar</ion-button>
+		<ion-toast trigger="open-toast" message="Hola como estas el dia de hoy??" [duration]="5000"></ion-toast>
+	</div>
+  
+	<ion-searchbar></ion-searchbar>
+  
+  <ion-card>
+    <img class="foto" alt="Silhouette of mountains" src="../../assets/photos/WhatsApp Image 2025-01-30 at 21.33.43_48616b10.jpg" />
+    <ion-card-header>
+      <ion-card-title>Nombre: Mateo Bernal</ion-card-title>
+      <ion-card-subtitle>Estudiante de desarrollo de software</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Tecnologias: HTML, React, CSS, MongoDB, MySQL
+    </ion-card-content>
+  </ion-card>
+
+  <div class="calendario">
+    <ion-datetime presentation="date"></ion-datetime>
+  </div>
+
+  <div class="registro">
+    <ion-input
+      type="text"
+      label="Nombre">
+    </ion-input>
+
+    <ion-input
+      type="text"
+      class="input" 
+      label="Apellido">
+    </ion-input>
+
+    <ion-input
+      type="email"
+      label="Email">
+    </ion-input>
+
+    <ion-input 
+      type="password" 
+      label="Password">
+      <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+    </ion-input>
+
+    <p>Genero</p>
+    <ion-radio-group value="strawberries">
+      <ion-radio value="grapes">Masulino</ion-radio><br />
+      <ion-radio value="strawberries">Femenino</ion-radio><br />
+    </ion-radio-group>
+
+    <p>Lenguajes</p>
+    <div>
+      <ion-checkbox>HTML</ion-checkbox>
+      <ion-checkbox>CSS</ion-checkbox>
+      <ion-checkbox>React</ion-checkbox>
+    </div>
+    <ion-button class="boton">Enviar Registro</ion-button>
+  </div>
+
+</ion-content>
